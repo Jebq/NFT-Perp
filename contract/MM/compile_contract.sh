@@ -1,0 +1,1 @@
+docker run --rm -v "$PWD":"$PWD" -w "$PWD" ligolang/ligo:0.27.0 compile-contract --protocol edo --disable-michelson-typechecking main.mligo main > ./michelson/mm.tz

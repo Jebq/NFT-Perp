@@ -1,0 +1,1 @@
+tezos-client originate contract MMContract transferring 0 from tz1LqTvin7oc2KMGkQ3ELYFFFFu6EyuHDeZV running michelson/mm.tz --init "$(< michelson/mm_storage.tz)"  --burn-cap 10 --force

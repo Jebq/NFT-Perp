@@ -1,0 +1,8 @@
+(Pair (Pair (Pair "tz1SjK9LU9YTdEXeMGVcMCpU2bTj2TrsZxiD" {})
+            { Elt "" 0x05010000001674657a6f732d73746f726167653a636f6e74656e7473 ;
+              Elt "contents"
+                  0x7b2276657273696f6e223a2276302e3031222c226e616d65223a2250455250735f464132227d }
+            {})
+      {}
+      0)
+

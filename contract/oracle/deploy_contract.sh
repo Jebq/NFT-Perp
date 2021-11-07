@@ -1,0 +1,1 @@
+tezos-client originate contract OracleContract transferring 0 from tz1LqTvin7oc2KMGkQ3ELYFFFFu6EyuHDeZV running michelson/oracle.tz --init "$(< michelson/oracle_storage.tz)"  --burn-cap 1 --force

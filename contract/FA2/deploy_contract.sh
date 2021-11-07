@@ -1,0 +1,1 @@
+tezos-client originate contract PERP_FA2 transferring 0 from tz1LqTvin7oc2KMGkQ3ELYFFFFu6EyuHDeZV running michelson/fa2.tz --init "$(< michelson/fa2_storage.tz)" --burn-cap 1 --force

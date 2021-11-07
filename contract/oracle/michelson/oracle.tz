@@ -1,0 +1,57 @@
+{ parameter
+    (or (pair %setPrice
+           (nat %token_id)
+           (pair (mutez %floor_price) (address %contract_address)))
+        (address %setSource)) ;
+  storage (pair (pair (address %admin) (big_map %price nat mutez)) (address %source)) ;
+  code { UNPAIR ;
+         IF_LEFT
+           { SWAP ;
+             DUP ;
+             DUG 2 ;
+             CDR ;
+             SENDER ;
+             COMPARE ;
+             NEQ ;
+             IF { DROP 2 ; PUSH string "UNAUTHORIZED" ; FAILWITH }
+                { UNPAIR 3 ;
+                  DIG 2 ;
+                  CONTRACT %update_floor_price (pair (nat %token_id) (mutez %floor_price)) ;
+                  IF_NONE { PUSH string "Contract not found." ; FAILWITH } {} ;
+                  PUSH mutez 0 ;
+                  DUP 3 ;
+                  DUP 5 ;
+                  SWAP ;
+                  PAIR ;
+                  TRANSFER_TOKENS ;
+                  DUP 4 ;
+                  CDR ;
+                  DUP 5 ;
+                  CAR ;
+                  CDR ;
+                  DUP 4 ;
+                  GET ;
+                  IF_NONE
+                    { DUP 5 ; CAR ; CDR ; DIG 4 ; DIG 4 ; SWAP ; SOME ; SWAP ; UPDATE }
+                    { DROP ; DUP 5 ; CAR ; CDR ; DIG 4 ; SOME ; DIG 4 ; UPDATE } ;
+                  DIG 3 ;
+                  CAR ;
+                  CAR ;
+                  PAIR ;
+                  PAIR ;
+                  NIL operation ;
+                  DIG 2 ;
+                  CONS ;
+                  PAIR } }
+           { SWAP ;
+             DUP ;
+             DUG 2 ;
+             CAR ;
+             CAR ;
+             SENDER ;
+             COMPARE ;
+             NEQ ;
+             IF { DROP 2 ; PUSH string "UNAUTHORIZED" ; FAILWITH } { SWAP ; CAR ; PAIR } ;
+             NIL operation ;
+             PAIR } } }
+

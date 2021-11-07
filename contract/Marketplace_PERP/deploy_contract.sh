@@ -1,0 +1,1 @@
+tezos-client originate contract PERPContract transferring 0 from tz1LqTvin7oc2KMGkQ3ELYFFFFu6EyuHDeZV running michelson/perp.tz --init "$(< michelson/perp_storage.tz)" --burn-cap 10 --force
