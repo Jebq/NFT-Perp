@@ -5,8 +5,8 @@ Live on granadanet: https://better-call.dev/granadanet/KT1MiaYhEWdyeyn8USZzW54qC
 Marketplace contract.
 
 Entrypoints:
-%setPrice
-%setSource
+* %setPrice
+* %setSource
 
 ## How to
 

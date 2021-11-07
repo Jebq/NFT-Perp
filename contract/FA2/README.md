@@ -7,11 +7,11 @@ Inspired and forked from https://github.com/claudebarde/fa2-token-with-built-in-
 FA2 token contract.
 
 Entrypoints:
-%Transfer
-%Update_operators
-%Balance_of
-%Mint
-%Burn
+* %Transfer
+* %Update_operators
+* %Balance_of
+* %Mint
+* %Burn
 
 ## How to
 

@@ -5,15 +5,15 @@ Live on granadanet: https://better-call.dev/granadanet/KT19T3iqWALWXRM46ARnVWVBq
 Marketplace contract.
 
 Entrypoints:
-%Create_pool
-%Update_pool
-%Long
-%Short
-%Close_long
-%Close_short
-%Update_floor_price
-%Unlock_funds
-%Default
+* %Create_pool
+* %Update_pool
+* %Long
+* %Short
+* %Close_long
+* %Close_short
+* %Update_floor_price
+* %Unlock_funds
+* %Default
 
 
 ## How to

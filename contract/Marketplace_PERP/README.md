@@ -7,12 +7,12 @@ Inspired and forked from https://github.com/claudebarde/fa2-token-with-built-in-
 Marketplace contract.
 
 Entrypoints:
-%Update_operators
-%Balance_of
-%Sell
-%Buy
-%Lock
-%Burn
+* %Update_operators
+* %Balance_of
+* %Sell
+* %Buy
+* %Lock
+* %Burn
 
 ## How to
 

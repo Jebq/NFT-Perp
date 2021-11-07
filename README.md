@@ -5,6 +5,9 @@
 Tentative of building a perpetual market for NFT floor prices on Tezos blockchain.
 Please take a look at the whitepaper.
 
+All contracts are live on granadanet - please look at their specifics READMEs to know more.
+You should be able to run the frontend and oracle locally - but they are mostly for demo. 
+
 Inspired from: https://www.paradigm.xyz/2021/08/floor-perps/
 
 ## How to
@@ -22,6 +25,8 @@ This step should be automatize and performed by nodes in order to be: 1) decentr
 ### Frontend
 
 Currently a frontend mostly made to facilitates the interactions with the smart contracts. Please look into `./dummy_fronted` to see how to use it.
+
+![front](figures/front.png)
 
 ## TODO
 
