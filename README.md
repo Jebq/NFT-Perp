@@ -49,4 +49,4 @@ They should also be able to propose new ideas that could be used to improve the 
 There should be a utility token designed to faciliate and make incentives for users to take part of the decentralized governance of the protocol.
 Holders of the tokens would have voting rights proportional to their holdings. Also, it could be used to pay users who run the oracle nodes.
 
-There are still certainly some other considerations to take into accounts for the project to be viable.
+There are probably still some other considerations to take into accounts for the project to be viable.
