@@ -3,7 +3,7 @@
 ## Projet description
 
 Tentative of building a perpetual market for NFT floor prices on Tezos blockchain.
-Please take a look at the whitepaper.
+Please take a look at the [whitepaper](https://github.com/Jebq/NFT-Perp/blob/main/nft_perp_whitepaper.pdf).
 
 All contracts are live on granadanet - please look at their specifics READMEs to know more.
 You should be able to run the frontend and oracle locally - but they are mostly for demo. 
